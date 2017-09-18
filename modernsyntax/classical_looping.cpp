@@ -28,7 +28,7 @@ void indexLoop(std::vector<Tool>& tools){
 }
 
 void iteratorLoop(std::vector<Tool>& tools){
-  for(std::vector<Tool>::const_iterator tool = tools.begin(), end = tools.end(); tool != end; ++tool){
+  for(auto tool = tools.cbegin(), end = tools.cend(); tool != end; ++tool){
     tool->print();
   }
 }
